@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suntrans.wanhua">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="com.suntrans.wanhua.MyApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.suntrans.wanhua.Login_Activity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.suntrans.wanhua.Parameter_Activity"
+            android:label="参数"   >
+        </activity>
+        <activity android:name="com.suntrans.wanhua.MainActivity"
+            android:label="主页面"   >
+        </activity>
+
+        <activity android:name="com.suntrans.wanhua.Setting_Activity"
+            android:label="设置页面"   >
+        </activity>
+
+        <activity android:name="com.suntrans.wanhua.Room_Activity"
+            android:label="开关控制">
+        </activity>
+        <service android:name="services.MainService"/>
+        <activity android:name="com.suntrans.wanhua.AlertRecordActivity"/>
+        <activity android:name=".DeviceManagerActivity"/>
+        <activity android:name=".SwitchDetailActivity"/>
+        <activity android:name=".RoomControlActivity"/>
+        <activity android:name=".DefaultRoomActivity"/>
+    </application>
+
+</manifest>

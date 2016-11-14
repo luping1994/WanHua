@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <!--<views.BottomMentTab-->
+        <!--android:background="@color/bg_color"-->
+        <!--android:id="@+id/tabLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_height="70dip"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabIndicatorHeight="0dp"-->
+        <!--app:tabMode="fixed"-->
+        <!--app:tabSelectedTextColor="@color/colorPrimary"-->
+        <!--app:tabTextColor="@color/gray">-->
+    <!--</views.BottomMentTab>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:paddingTop="0dip"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:padding="5dip"
+                android:id="@+id/img_con"
+                android:src="@mipmap/ic_powercontrol"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:text="能源管控"
+                android:id="@+id/tx_con"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:padding="5dip"
+                android:id="@+id/img_env"
+                android:src="@mipmap/ic_envir"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/tx_envi"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:text="室内环境"
+                android:textSize="15sp"
+                android:textColor="@color/grey"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

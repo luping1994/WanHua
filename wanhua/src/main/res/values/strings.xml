@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">万华互联大厦</string>
+    <string name="title">万华互联大厦</string>
+    <string name="back">返回</string>
+    <string name="alertTitle">报警记录</string>
+    <string name="deleteRecord">清除记录</string>
+    <string name="device_manager">设备管理</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:orientation="vertical"
+       >
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:scaleType="fitXY"
+            android:layout_marginTop="8dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_dot_off"/>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/iv"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:src="@drawable/ic_bulb_off"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="90dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="插座"
+        />
+</LinearLayout>
